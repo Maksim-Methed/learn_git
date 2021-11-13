@@ -13,3 +13,9 @@ git config --global init.defaultBranch main
 git init # инициализация репозитория
 git add . # добавить все файлы в track
 git commit -m "описание" # сделать коммит
+git status # показывает текущий статус
+git diff # Показывает текущие изменения 
+git diff --color-words # Более развёрнуто изменения
+git checkout . # вернуться к последнему коммиту
+
+git push
