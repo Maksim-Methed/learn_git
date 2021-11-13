@@ -1,21 +1,52 @@
 # git-config
-
-git config --global user.name “Максим Лескин”
-git config --global user.email “Quper87@gmail.com”
+## Действия после установки git
 
 git config --list # посмотреть настройки
 
-git config --global core.autocrlf true
-git config --global core.quotepath off
+git config --global user.name “имя”
+git config --global user.email “почта”
+
+
 git config --global core.safecrlf warn
-git config --global init.defaultBranch main
+git config --global core.quotepath off
 
-git init # инициализация репозитория
-git add . # добавить все файлы в track
-git commit -m "описание" # сделать коммит
-git status # показывает текущий статус
-git diff # Показывает текущие изменения 
-git diff --color-words # Более развёрнуто изменения
-git checkout . # вернуться к последнему коммиту
+### windows
+git config --global core.autocrlf true
 
-git push
+
+### MAC & UNIX
+git config --global core.autocrlf input
+
+
+git config --global init.defaultBranch main # Ветка по умолчанию
+
+
+## Действия при инициализации нового репозитория и при работе с ним
+
+git init # инициализация git репозитория
+
+git status # текущее состоянеие репозитория
+
+git add index.html # добавить в трек (отслеживаемые) файл или папку
+
+git add . # добавить все файлы из корня в трек
+
+git commit -m "сообщение" # выполнить коммит (сделать слепок) текущего состояния проекта
+
+git log --oneline # посмотреть историю коммитов
+
+git diff # показывает изменения
+git diff --color-words # показывает по строкам изменения
+
+отменить коммит "ПЕРЕПИСЫВАЕТ ИСТОРИЮ"
+git reset 'HASH commit' - вернуться к коммиту старому но оставить текущие изменения
+git reset --hard 'HASH commit' - вернуться к коммиту и удалить все изменения
+
+git checkout # откатить изменения
+
+
+git push # отправить изменения в удаленный репозиторий
+
+git clone https://github.com/Quper87/git-lesson.git # клонирование репозитория
+
+git commit -a -m 'сохраняет изменения и выполняет коммит'
