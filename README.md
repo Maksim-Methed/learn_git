@@ -9,6 +9,7 @@ git config --global user.email “почта”
 
 git config --global core.safecrlf warn
 git config --global core.quotepath off
+git config --global init.defaultBranch main # Ветка по умолчанию
 
 ### windows
 git config --global core.autocrlf true
@@ -18,7 +19,7 @@ git config --global core.autocrlf true
 git config --global core.autocrlf input
 
 
-git config --global init.defaultBranch main # Ветка по умолчанию
+
 
 
 ## Действия при инициализации нового репозитория и при работе с ним
@@ -38,7 +39,7 @@ git log --oneline # посмотреть историю коммитов
 git diff # показывает изменения
 git diff --color-words # показывает по строкам изменения
 
-отменить коммит "ПЕРЕПИСЫВАЕТ ИСТОРИЮ"
+## отменить коммит "ПЕРЕПИСЫВАЕТ ИСТОРИЮ"
 git reset 'HASH commit' - вернуться к коммиту старому но оставить текущие изменения
 git reset --hard 'HASH commit' - вернуться к коммиту и удалить все изменения
 
