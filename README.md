@@ -1,8 +1,12 @@
 # git-config
 ## Действия после установки git
 
-git config --list # посмотреть настройки
+### посмотреть настройки
+```shell
+git config --list
+```
 
+```shell
 git config --global user.name “имя”
 git config --global user.email “почта”
 
@@ -10,43 +14,77 @@ git config --global user.email “почта”
 git config --global core.safecrlf warn
 git config --global core.quotepath off
 git config --global init.defaultBranch main # Ветка по умолчанию
+```
 
 ### windows
+```shell
 git config --global core.autocrlf true
+```
 
 
 ### MAC & UNIX
+```shell
 git config --global core.autocrlf input
-
-
-
+```
 
 
 ## Действия при инициализации нового репозитория и при работе с ним
 
-git init  инициализация git репозитория
 
-git status  текущее состоянеие репозитория
+### инициализация git репозитория
+```shell
+git init
+```
 
-git add index.html  добавить в трек (отслеживаемые) файл или папку
+### текущее состоянеие репозитория
+```shell
+git status
+```
 
-git add .  добавить все файлы из корня в трек
+### добавить в трек (отслеживаемые) файл или папку
+```shell
+git add index.html
+```
 
-git commit -m "сообщение"  выполнить коммит (сделать слепок) текущего состояния проекта
+### добавить все файлы из корня в трек
+```shell
+git add .
+```
 
+### выполнить коммит (сделать слепок) текущего состояния проекта
+```shell
+git commit -m "сообщение"
+```
+
+```shell
 git log --oneline  посмотреть историю коммитов
 
-git diff # показывает изменения
-git diff --color-words # показывает по строкам изменения
+### показывает изменения
+```shell
+git diff
+git diff --color-words // показывает по строкам изменения
+```
 
 ## отменить коммит "ПЕРЕПИСЫВАЕТ ИСТОРИЮ"
-git reset 'HASH commit' - вернуться к коммиту старому но оставить текущие изменения
-git reset --hard 'HASH commit' - вернуться к коммиту и удалить все изменения
 
+### вернуться к коммиту старому но оставить текущие изменения
+```shell
+git reset 'HASH commit'
+```
+
+### вернуться к коммиту и удалить все изменения
+```shell
+git reset --hard 'HASH commit'
+```
 ### откатить изменения у всех файлов трека
 ```shell
-git checkout .  // откатить изменения у всех файлов трека
+git checkout .  
 git checkout name.file  // откатить изменения в одном файле или каталоге
+```
+
+### откатить изменения в одном файле или каталоге
+```shell
+git checkout name.file
 ```
 
 ### отправить изменения в удаленный репозиторий
