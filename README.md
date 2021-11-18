@@ -43,16 +43,19 @@ git diff --color-words # показывает по строкам изменен
 git reset 'HASH commit' - вернуться к коммиту старому но оставить текущие изменения
 git reset --hard 'HASH commit' - вернуться к коммиту и удалить все изменения
 
-git checkout .  откатить изменения у всех файлов трека
-git checkout name.file # откатить изменения в одном файле или каталоге
+### откатить изменения у всех файлов трека
+```shell
+git checkout .  // откатить изменения у всех файлов трека
+git checkout name.file  // откатить изменения в одном файле или каталоге
+```
 
 ### отправить изменения в удаленный репозиторий
-```Shell Session
+```shell
 git push 
 ```
 
 ### клонирование репозитория
-```Makefile
+```shell
 git clone https://github.com/Quper87/git-lesson.git
 ```
 
