@@ -36,7 +36,7 @@ git config --global core.autocrlf input
 git init
 ```
 
-### текущее состоянеие репозитория
+### текущее состояние репозитория
 ```shell
 git status
 ```
