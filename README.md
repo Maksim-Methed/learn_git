@@ -101,10 +101,3 @@ git clone https://github.com/Quper87/git-lesson.git
 ```shell
 git commit -a -m 'сохраняет изменения отслеживаемых файлов и выполняет коммит'
 ```
-
-# GIT LVL 2
-
-### Получение изменений с Github
-```shell
-git pull --rebase
-```
